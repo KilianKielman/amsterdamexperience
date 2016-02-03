@@ -1,16 +1,12 @@
 $(document).ready(function() {
-		$("img").click(
-		function() {
-			if (this.width === 400){ 
-				$(this).width(1200);
-				$(this).height(600);
-			}
+  $("h1").animate({
+        'font-size' : '40px',
+        'opacity': '1'
+    }, 1500);
 
-			else if (this.width === 1200){
-				$(this).width(400);
-				$(this).height(200);
-				}
-			});
+  $("h2").hide();
+  
+  $("img").click(function() {
+    $("h2").show(1000);
+  });
 });
-
-
